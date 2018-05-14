@@ -16,13 +16,13 @@ repositories {
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '24.0.2'
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.example.android.plexdvrinput"
-        minSdkVersion 23
-        targetSdkVersion 25
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
         versionCode 65
         versionName '1.7.9'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -55,24 +55,25 @@ android {
 }
 
 dependencies {
-    compile project(':plugins')
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile('com.crashlytics.sdk.android:crashlytics:2.5.1@aar') {
         transitive = true;
     }
     compile 'com.android.support:recyclerview-v7:25.1.0'
-    compile 'com.android.support:leanback-v17:25.1.0'
+    compile "com.android.support:leanback-v17:${project.ext.supportVersion}"
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:customtabs:25.1.0'
     compile 'com.android.support:palette-v7:25.1.0'
     compile 'com.android.support:preference-leanback-v17:25.1.0'
+    compile "com.android.support:support-core-utils:${project.ext.supportVersion}"
     androidTestCompile 'com.android.support:support-annotations:25.1.0'
 
     compile 'com.google.android.gms:play-services-drive:10.0.0'
     compile 'com.pnikosis:materialish-progress:1.5'
     compile 'com.github.paolorotolo:appintro:3.2.0'
     compile 'com.squareup.okhttp:okhttp:2.4.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile "com.github.bumptech.glide:glide:${project.ext.glideVersion}"
+    compile "com.github.bumptech.glide:okhttp3-integration:${project.ext.glideVersion}@aar"
     compile 'com.github.fleker:settingsmanager:1.3.5'
     // In alpha
     compile 'com.google.android.media.tv:companionlibrary:1.0.1'
@@ -83,4 +84,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.robolectric:robolectric:3.1.4'
     testCompile 'org.mockito:mockito-core:1.10.19'
+    compile project(path: ':msgexchange')
+    compile project(path: ':plugins')
+    compile project(path: ':app')
 }
