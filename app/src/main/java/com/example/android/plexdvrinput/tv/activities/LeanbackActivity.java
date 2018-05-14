@@ -18,9 +18,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import io.fabric.sdk.android.Fabric;
 
-/*
- * MainActivity class that loads MainFragment
- */
 public class LeanbackActivity extends Activity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private static final String TAG = LeanbackActivity.class.getSimpleName();

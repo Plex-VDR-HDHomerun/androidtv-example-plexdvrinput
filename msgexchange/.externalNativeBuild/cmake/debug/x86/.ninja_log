@@ -29,3 +29,13 @@
 1101	1221	0	/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange.so	b9fb18ec6b55b95f
 1221	2095	0	jniwrap/CMakeFiles/msgexchange_jni.dir/jniwrap.cpp.o	92d82c6628cdeb18
 2095	2129	0	/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange_jni.so	fb97f8114c66d5e1
+2	96	0	msgexchange/CMakeFiles/msgexchange.dir/src/os-config.cpp.o	c68148a350e3945a
+1	653	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgcondition.cpp.o	2d8430ef63873d1e
+1	797	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgconnection.cpp.o	cbd8b68fe3538746
+2	853	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgthreadqueue.cpp.o	17959e06ed5a4549
+1	873	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgpacket.cpp.o	58b64bf4e96f4e04
+1	954	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgsession.cpp.o	76ef0f4b269f12cd
+2	1182	0	msgexchange/CMakeFiles/msgexchange.dir/src/msgthread.cpp.o	e194eac734547e8b
+1182	1330	0	/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange.so	b9fb18ec6b55b95f
+1330	2203	0	jniwrap/CMakeFiles/msgexchange_jni.dir/jniwrap.cpp.o	92d82c6628cdeb18
+2203	2238	0	/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange_jni.so	fb97f8114c66d5e1

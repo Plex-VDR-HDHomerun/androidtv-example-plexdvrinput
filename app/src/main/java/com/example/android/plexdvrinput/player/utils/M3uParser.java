@@ -239,8 +239,8 @@ public class M3uParser {
     public static class Constants {
         public static final String HEADER_TAG = "#EXTM3U";
         public static final String CHANNEL_TAG = "#EXTINF:-1";
-        public static final String CH_NUMBER = "tvg-chno";
-        public static final String CH_LOGO = "logo";
+        public static final String CH_NUMBER = "tvg-id";
+        public static final String CH_LOGO = "tvg-logo";
         public static final String CH_AUDIO_ONLY = "audio-only";
         public static final String CH_EPG_URL = "epg-url";
         public static final String CH_GENRES = "group-title";
