@@ -113,11 +113,11 @@ public class SettingsFragment extends LeanbackSettingsFragment
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                updateChannels(getActivity(), "com.example.android.plexdvrinput.tv.CumulusTvTifService", tvChannels);
+                updateChannels(getActivity(), "com.example.android.plexdvrinput.tv.LeanbackTvTifService", tvChannels);
 
                 Cursor cursor = getActivity().getContentResolver().query(
-                        TvContract.buildChannelsUriForInput("com.example.android.plexdvrinput.tv.CumulusTvTifService"), null, null, null, null);
-                Log.d("S", "Query from " + TvContract.buildChannelsUriForInput("com.example.android.plexdvrinput/com.example.android.plexdvrinput.tv.CumulusTvTifService"));
+                        TvContract.buildChannelsUriForInput("com.example.android.plexdvrinput.tv.LeanbackTvTifService"), null, null, null, null);
+                Log.d("S", "Query from " + TvContract.buildChannelsUriForInput("com.example.android.plexdvrinput/com.example.android.plexdvrinput.tv.LeanbackTvTifService"));
                 StringBuilder builder = new StringBuilder();
                 if (cursor == null) {
                     builder.append("null");

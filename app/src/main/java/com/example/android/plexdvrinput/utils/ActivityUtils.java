@@ -66,7 +66,7 @@ public class ActivityUtils {
     public static final int REQUEST_CODE_OPENER = 104;
     public static final int PERMISSION_EXPORT_M3U = 201;
     public static final ComponentName TV_INPUT_SERVICE = new ComponentName("com.example.android.plexdvrinput",
-            "com.example.android.plexdvrinput.tv.CumulusTvTifService");
+            "com.example.android.plexdvrinput.tv.LeanbackTvTifService");
 
     public final static int LAST_GOOD_BUILD = 27;
 

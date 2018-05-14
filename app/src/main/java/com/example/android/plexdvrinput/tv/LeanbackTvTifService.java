@@ -46,8 +46,8 @@ import java.util.concurrent.ExecutionException;
 /**
  * An instance of {@link BaseTvInputService} which plays Leanback Tv videos.
  */
-public class CumulusTvTifService extends BaseTvInputService {
-    private static final String TAG = CumulusTvTifService.class.getSimpleName();
+public class LeanbackTvTifService extends BaseTvInputService {
+    private static final String TAG = LeanbackTvTifService.class.getSimpleName();
     private static final boolean DEBUG = false;
     private static final long EPG_SYNC_DELAYED_PERIOD_MS = 1000 * 2; // 2 Seconds
 
@@ -407,8 +407,8 @@ public class CumulusTvTifService extends BaseTvInputService {
         }
 
         private void requestEpgSync(final Uri channelUri) {
-            CumulusJobService.requestImmediateSync1(CumulusTvTifService.this, mInputId, CumulusJobService.DEFAULT_IMMEDIATE_EPG_DURATION_MILLIS,
-                    new ComponentName(CumulusTvTifService.this, CumulusJobService.class));
+            CumulusJobService.requestImmediateSync1(LeanbackTvTifService.this, mInputId, CumulusJobService.DEFAULT_IMMEDIATE_EPG_DURATION_MILLIS,
+                    new ComponentName(LeanbackTvTifService.this, CumulusJobService.class));
             new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                 @Override
                 public void run() {
