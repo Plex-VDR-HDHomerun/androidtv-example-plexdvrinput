@@ -21,12 +21,12 @@ allprojects {
         }
     }
     project.ext {
-        minSdkVersion=22
-        compileSdkVersion=26
-        targetSdkVersion=26
-        buildToolsVersion='27.0.3'
-        exoPlayerVersion='2.6.1'
-        supportVersion='27.0.2'
-        glideVersion='4.4.0'
+        minSdkVersion=24
+        compileSdkVersion=25
+        targetSdkVersion=25
+        buildToolsVersion='26.0.3'
+        exoPlayerVersion='r2.2.0'
+        supportVersion='26.0.2'
+        glideVersion='3.7.0'
     }
 }
